@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='description' content='Wayne Hoover - Full Stack Software Engineer')
+    meta(name='author' content='Wayne Hoover')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    block title
+      title Wayne Hoover
+
+    link(rel='stylesheet' href='./index.sss')
+    script(src="https://use.typekit.net/pcg8keu.js")
+    script(src="./index.js")
+    script.
+      try{Typekit.load({ async: true });}catch(e){}
+
+  body
+    main
+      header
+        a.home(href="/") ⚡
+        .container-header
+          h1 Wayne Hoover
+          nav.flex.flex-wrap.mx-auto.justify-center
+            a(target="_blank" href="https://github.com/waynehoover") Github
+            a(target="_blank" href="https://angel.co/waynehoover") AngelList
+            a(target="_blank" href="https://www.linkedin.com/in/waynephoover/") LinkedIn
+            a(href="/resume") Resumé
+            a(href="mailto:wayne@waynehoover.com") Contact
+          block header
+
+      block content
+
+      footer.ml-3.mt-24
+        ul.list-reset.flex.justify-left
+          li: a(href="/") Home
+          li.mx-5: a(href="https://medium.com/@waynehoover" target="_blank") Blog
+          li: a(href="./now.pug") Now

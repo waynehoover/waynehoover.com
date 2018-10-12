@@ -9,25 +9,25 @@ html
     block title
       title Wayne Hoover
 
+    link(rel="stylesheet" href="https://use.typekit.net/pcg8keu.css")
     link(rel='stylesheet' href='./index.sss')
-    script(src="https://use.typekit.net/pcg8keu.js")
-    script(src="./index.js")
-    script.
-      try{Typekit.load({ async: true });}catch(e){}
 
-  body
+  body.font-sans
     main
-      header
-        a.home(href="/") ⚡
-        .container-header
-          h1 Wayne Hoover
-          nav.flex.flex-wrap.mx-auto.justify-center
-            a(target="_blank" href="https://github.com/waynehoover") Github
-            a(target="_blank" href="https://angel.co/waynehoover") AngelList
-            a(target="_blank" href="https://www.linkedin.com/in/waynephoover/") LinkedIn
-            a(href="/resume") Resumé
-            a(href="mailto:wayne@waynehoover.com") Contact
-          block header
+      header.w-full
+        div.bg-sha-1.h-12
+          a.home(href="/") 🌕
+        div.bg-sha-2.h-12.flex.content-center.items-center.justify-center
+          h1.text-5xl.leading-none.houtline Wayne Hoover
+        div.bg-sha-3.h-12
+         nav(class="flex justify-center flex-wrap h-12 content-center items-center")
+            a.mr-10.no-underline(target="_blank" href="https://github.com/waynehoover") Github
+            a.mr-10.no-underline(target="_blank" href="https://angel.co/waynehoover") AngelList
+            a.mr-10.no-underline(target="_blank" href="https://www.linkedin.com/in/waynephoover/") LinkedIn
+            a.mr-10.no-underline(href="/resume") Resumé
+            a.no-underline(href="mailto:wayne@waynehoover.com") Contact
+        div.bg-sha-4.h-12
+        block header
 
       block content
 
@@ -35,4 +35,4 @@ html
         ul.list-reset.flex.justify-left
           li: a(href="/") Home
           li.mx-5: a(href="https://medium.com/@waynehoover" target="_blank") Blog
-          li: a(href="./now.pug") Now
+          li: a(href="/now") Now

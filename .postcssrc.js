@@ -1,5 +1,3 @@
-const env = process.env.NODE_ENV || 'dev';
-
 const production = {
   plugins: [
     require('tailwindcss')('./tailwind.js'),
@@ -22,4 +20,8 @@ const config = {
  dev
 };
 
-module.exports = config[env];
+if(process.env.NODE_ENV === 'production'){
+  module.exports = config['production'];
+}else{
+  module.exports = config['dev'];
+}

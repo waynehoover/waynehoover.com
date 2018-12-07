@@ -6,20 +6,18 @@
   "scripts": {
     "watch": "parcel src/*.pug",
     "build": "parcel build src/*.pug -d public/ --no-cache --no-source-maps --no-autoinstall --no-content-hash",
-    "deploy": "firebase deploy",
-    "ship": "yarn build && yarn deploy"
+    "firebase_upload": "firebase deploy",
+    "deploy": "yarn build && yarn firebase_upload"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "cssnano": "^4.1.4",
+    "@fullhuman/postcss-purgecss": "^1.1.0",
+    "cssnano": "^4.1.7",
     "postcss-nested": "^4.1.0",
     "pug": "^2.0.3",
     "sugarss": "^2.0.0",
-    "tailwindcss": "^0.6.6"
-  },
-  "dependencies": {
-    "@fullhuman/postcss-purgecss": "^1.1.0"
+    "tailwindcss": "^0.7.2"
   }
 }

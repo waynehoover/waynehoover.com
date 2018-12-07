@@ -15,18 +15,17 @@ html
   body.font-sans
     main
       header.w-full
-        div.bg-sha-1.h-12
-          a.home(href="/") 🌕
-        div.bg-sha-2.h-12.flex.content-center.items-center.justify-center
+        div.h-12
+          a.home(href="/") ⚡
+        div.h-12.flex.content-center.items-center.justify-center
           h1.text-5xl.leading-none.houtline Wayne Hoover
-        div.bg-sha-3.h-12
+        div.h-12
          nav(class="flex justify-center flex-wrap h-12 content-center items-center")
             a.mr-10.no-underline(target="_blank" href="https://github.com/waynehoover") Github
-            a.mr-10.no-underline(target="_blank" href="https://angel.co/waynehoover") AngelList
+            a.mr-10.no-underline(target="_blank" href="https://medium.com/@waynehoover") Blog
             a.mr-10.no-underline(target="_blank" href="https://www.linkedin.com/in/waynephoover/") LinkedIn
             a.mr-10.no-underline(href="/resume") Resumé
-            a.no-underline(href="mailto:wayne@waynehoover.com") Contact
-        div.bg-sha-4.h-12
+            a.mr-10.no-underline(target="_blank" href="https://angel.co/waynehoover") AngelList
         block header
 
       block content
@@ -34,5 +33,5 @@ html
       footer.ml-3.mt-24
         ul.list-reset.flex.justify-left
           li: a(href="/") Home
-          li.mx-5: a(href="https://medium.com/@waynehoover" target="_blank") Blog
+          li: a(href="mailto:wayne@waynehoover.com") Contact
           li: a(href="/now") Now

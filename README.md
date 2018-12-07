@@ -7,5 +7,5 @@ Useful commands:
 ```
   yarn run watch
   yarn run build
-  yarn run ship
+  yarn run deploy
 ```

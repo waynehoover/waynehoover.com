@@ -1,7 +1,7 @@
 {
-  "name": "wh.com",
+  "name": "waynehoover.com",
   "version": "1.0.0",
-  "description": "",
+  "description": "WayneHoover.com | Website and selected portfolio for the full stack software engineer Wayne Hoover",
   "main": "index.js",
   "scripts": {
     "watch": "parcel src/*.pug",
@@ -10,7 +10,7 @@
     "deploy": "yarn build && yarn firebase_upload"
   },
   "keywords": [],
-  "author": "",
+  "author": "Wayne Hoover",
   "license": "MIT",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.1.0",

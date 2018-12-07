@@ -4,7 +4,7 @@
   "description": "WayneHoover.com | Website and selected portfolio for the full stack software engineer Wayne Hoover",
   "main": "index.js",
   "scripts": {
-    "watch": "parcel src/*.pug",
+    "watch": "parcel src/*.pug -d public/",
     "build": "parcel build src/*.pug -d public/ --no-cache --no-source-maps --no-autoinstall --no-content-hash",
     "firebase_upload": "firebase deploy",
     "deploy": "yarn build && yarn firebase_upload"

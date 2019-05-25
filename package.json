@@ -13,11 +13,11 @@
   "author": "Wayne Hoover",
   "license": "MIT",
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^1.1.0",
-    "parcel": "^1.11.0",
-    "postcss-nested": "^4.1.0",
+    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "parcel": "^1.12.3",
+    "postcss-nested": "^4.1.2",
     "pug": "^2.0.3",
     "sugarss": "^2.0.0",
-    "tailwindcss": "^0.7.2"
+    "tailwindcss": "^1.0.1"
   }
 }

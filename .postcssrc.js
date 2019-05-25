@@ -1,6 +1,6 @@
 const dev = {
   plugins: [
-    require('tailwindcss')('./tailwind.js'),
+    require('tailwindcss')('tailwind.config.js'),
     require('postcss-nested')
   ]
 };

@@ -3,16 +3,18 @@
   "version": "1.0.0",
   "description": "WayneHoover.com | Website and selected portfolio for the full stack software engineer Wayne Hoover",
   "main": "index.js",
+  "homepage": "https://waynehoover.com",
   "scripts": {
     "watch": "parcel src/index.pug -d public/",
     "build": "parcel build src/*.pug -d public/ --no-cache --no-source-maps --no-autoinstall --no-content-hash",
-    "firebase_upload": "firebase deploy",
-    "deploy": "yarn build && yarn firebase_upload"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public"
   },
   "keywords": [],
   "author": "Wayne Hoover",
   "license": "MIT",
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "@fullhuman/postcss-purgecss": "^2.1.0",
     "parcel": "^1.12.4",
     "postcss-nested": "^4.2.1",

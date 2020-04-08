@@ -8,7 +8,7 @@
     "watch": "parcel src/index.pug -d public/",
     "build": "parcel build src/*.pug -d public/ --no-cache --no-source-maps --no-autoinstall --no-content-hash",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -t -d public"
   },
   "keywords": [],
   "author": "Wayne Hoover",

@@ -1,8 +1,7 @@
 module.exports = {
-  separator: '_',  
   theme: {
     extend: {}
   },
   variants: {},
-  plugins: []
+  plugins: [require('@tailwindcss/ui')]
 }

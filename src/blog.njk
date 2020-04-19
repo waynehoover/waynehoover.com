@@ -1,0 +1,41 @@
+---
+layout: page
+title: Blog
+pagination:
+  data: collections.posts
+  size: 25
+---
+{% from "postItem.njk" import postItem %}
+{% set postList = pagination.items %}
+
+<div class="mt-6 grid gap-16 lg:grid-cols-2 lg:col-gap-12 lg:row-gap-2">
+  {% if postList.length %}
+    {% for item in postList | reverse %}
+      {{ postItem(item.url, item.data.title, item.date) }}
+    {% endfor %}
+  {% endif %}
+</div>
+
+{% include "pagination.njk" %}
+
+<div class="max-w-3xl m-auto">
+  <div class="sm:mt-4 lg:grid lg:grid-cols-2 lg:gap-5 lg:items-center">
+    <p class="text-xl leading-7 pb-0">
+      Get notified of new blog posts:
+    </p>
+    <form
+      action="https://buttondown.email/api/emails/embed-subscribe/waynehoover"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://buttondown.email/waynehoover', 'popupwindow')"
+      class="mt-6 flex lg:mt-0 lg:justify-end"
+    >
+      <input aria-label="Email address" type="email" required class="appearance-none w-full px-4 py-2 border border-gray-300 text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out lg:max-w-xs" placeholder="Email" />
+      <span class="ml-3 flex-shrink-0 inline-flex rounded-md shadow-sm">
+        <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
+          Notify me
+        </button>
+      </span>
+    </form>
+  </div>
+</div>

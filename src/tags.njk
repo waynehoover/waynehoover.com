@@ -1,0 +1,23 @@
+---
+layout: page
+metaTitle: Tag
+description: Categories page description
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /blog/tag/{{ tag | slug }}/
+---
+{% from "postItem.njk" import postItem %}
+
+<h1 class="text-3xl">#{{ tag }}</h1>
+<p class="text-lg">{{ collections[tag].length }} posts published</p>
+
+<div class="mt-6 grid gap-16 lg:grid-cols-2 lg:col-gap-5 lg:row-gap-12">
+  <div>
+    {% for post in collections[tag] | reverse %}
+      {{ postItem(post.url, post.data.title, post.date) }}
+    {% endfor %}
+  </div>
+</div>
+

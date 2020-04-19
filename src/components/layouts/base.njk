@@ -1,0 +1,14 @@
+<html lang="{{ config.lang }}" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="alternate" type="application/rss+xml" title="{{ config.title }}" href="{{ config.url }}/feed.xml"/>
+    {% include "meta.njk" %}
+    <link rel="stylesheet" href="/assets/css/app.css">
+    {% block head %}{% endblock %}
+  </head>
+  <body class="text-purple-900">
+    {% block content %}{% endblock content %}
+  <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+  </body>
+</html>

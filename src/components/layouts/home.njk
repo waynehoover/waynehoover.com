@@ -1,0 +1,26 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <main class="container mx-auto px-4" tabindex="-1">
+    {% include "header.njk" %}
+    <div class="flex content-center items-center justify-center mt-10">
+      <h1 class="leading-none houtline" style="font-size: 10vw;">Wayne Hoover</h1>
+    </div>
+    <div class="container mx-auto max-w-3xl">
+      <hr class="brace">
+    </div>
+    {{ content | safe }}
+    <div class="container mx-auto mb-10" style="max-width:56rem;">
+      <h2 class="slidingWrap px-5 py-5 pt-12 leading-normal mx-auto text-purple-900">
+        I make websites that <div class="slidingVertical">{% for titleWord in titleWords %}<span>{{titleWord}}.</span>{% endfor %}</div>
+      </h2>
+    </div>
+    <section class="container mx-auto max-w-3xl flex flex-row flex-wrap justify-center pb-10">
+      <p class="font-decovar text-3xl px-5 py-5 leading-normal text-center text-purple-900">
+        I have <span class="highlight">ten years</span> experience building efficient ⚡ and maintanable 👌 web apps that produce results 😎
+      </p>
+      <p class="py-10"><a class="text-purple-700 text-3xl text-center" href="/about"><u>Learn more</u> about my work and how I can <u>help you</u>.</a></p>
+    </section>
+    {% include "footer.njk" %}
+  </main>
+{% endblock %}

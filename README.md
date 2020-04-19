@@ -1,11 +1,6 @@
-## WayneHoover.com
+# WayneHoover.com
 
-This is a simple static site using parcel.js to transform .pug files into html and .sss files into css. Also using tailwinds.css for funzies.
+11ty static site that powers https://waynehoover.com with parceljs and tailwindcss. Deployed to Netlify.
 
-Useful commands:
-
-```
-  yarn run watch
-  yarn run build
-  yarn run deploy
-```
+- `yarn dev`
+- `yarn deploy`

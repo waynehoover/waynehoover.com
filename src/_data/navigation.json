@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "text": "⚡Home",
+      "url": "/",
+      "external": false
+    },
+    {
+      "text": "Hire Me",
+      "url": "/hire-me/",
+      "external": false
+    },
+    {
+      "text": "Blog",
+      "url": "/blog/",
+      "external": false
+    },
+    {
+      "text": "Wiki",
+      "url": "https://kb.waynehoover.com",
+      "external": true
+    }
+  ]
+}

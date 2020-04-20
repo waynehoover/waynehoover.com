@@ -6,6 +6,8 @@ const rssPlugin = require('@11ty/eleventy-plugin-rss')
 const date = require('./utils/filters/date.js')
 const fs = require('fs')
 
+require('dotenv').config();
+
 /**
  * Import site configuration
  */

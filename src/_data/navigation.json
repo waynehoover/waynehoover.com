@@ -11,8 +11,13 @@
       "external": false
     },
     {
-      "text": "Blog",
-      "url": "/blog/",
+      "text": "Writing",
+      "url": "/writing/",
+      "external": false
+    },
+    {
+      "text": "Micro Blog",
+      "url": "/micro-blog/",
       "external": false
     },
     {

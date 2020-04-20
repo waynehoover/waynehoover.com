@@ -13,7 +13,7 @@
   "figureClass": ["figure"],
   "paths": {
     "src": "src",
-    "blogdir": "blog",
+    "blogdir": "writing",
     "includes": "components",
     "output": "dist"
   }

@@ -22,10 +22,13 @@ module.exports = function(eleventyConfig) {
       title,
       tagline,
       cloudName: 'wayneslife',
-      imagePublicID: 'og-image-bg',
+      imagePublicID: 'wh.com-og2',
       titleFont: 'Inter:Inter-Black.otf',
       taglineFont: 'Inter:Inter-Regular.otf',
       textColor: 'ffffff',
+      textLeftOffset: '75',
+      titleLeftOffset: '75',
+      textAreaWidth: '1205'
     });
   });
 

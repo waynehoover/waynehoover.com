@@ -5,6 +5,7 @@ const htmlDate = require('./utils/filters/htmlDate.js')
 const rssPlugin = require('@11ty/eleventy-plugin-rss')
 const date = require('./utils/filters/date.js')
 const fs = require('fs')
+const getShareImage = require('./utils/filters/getShareImage.js')
 
 require('dotenv').config();
 
@@ -14,6 +15,20 @@ require('dotenv').config();
 const siteConfig = require('./src/_data/config.json')
 
 module.exports = function(eleventyConfig) {
+
+  // shortcode for getShareImage
+  eleventyConfig.addShortcode("getShareImage", function(title, tagline) {
+    return getShareImage({
+      title,
+      tagline,
+      cloudName: 'wayneslife',
+      imagePublicID: 'og-image-bg',
+      titleFont: 'Inter:Inter-Black.otf',
+      taglineFont: 'Inter:Inter-Regular.otf',
+      textColor: 'ffffff',
+    });
+  });
+
   /**
    * Add custom watch targets
    *

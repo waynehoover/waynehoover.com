@@ -1,8 +1,9 @@
 ---
 title: 8 Tips for a Blazing Fast Website
+metaDesc: 8 easy to implement tips on how to speed up your website.
 date: '2020-04-29'
 tags:
-  - website speed optimization
+  - speed optimization
 ---
 
 ## Why optimize for speed?

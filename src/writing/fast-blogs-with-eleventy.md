@@ -1,5 +1,6 @@
 ---
 title: Fast Blogs with Eleventy
+metaDesc: How to create a fast blog with eleventy
 date: '2020-04-17'
 tags:
   - eleventy

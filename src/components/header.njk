@@ -13,7 +13,7 @@
           {% set isCurrent = ' aria-current="page"' %}
           {% set isCurrentClass = ' currentPage' %}
         {% endif %}
-        <a class="whitespace-no-wrap mr-5 no-underline text-xl text-purple-700{{isCurrentClass}}" href="{{ item.url }}"{{ relExternal | safe }}{{ isCurrent | safe }}>
+        <a class="whitespace-no-wrap mr-5 no-underline text-xl {{isCurrentClass}}" href="{{ item.url }}"{{ relExternal | safe }}{{ isCurrent | safe }}>
           {{ item.text }}
         </a>
       {% endfor %}

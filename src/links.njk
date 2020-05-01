@@ -1,0 +1,15 @@
+---
+layout: page
+title: Bookmarks
+---
+
+<h2>Bookmarks</h2>
+<p>The last 15 links that I have saved in my [Pinboard](https://pinboard.in/u:blissofbeing/).</p>
+<ul>
+  {% for post in pinboard.posts %}
+    <li>
+      <a href="{{ post.href }}" target="_blank">{{post.description}}</a>
+      <p>{{post.tags}}</p>
+    </li>
+  {% endfor %}
+</ul>

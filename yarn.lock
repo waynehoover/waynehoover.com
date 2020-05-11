@@ -4204,11 +4204,6 @@ ini@^1.3.4:
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
   integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
 
-instant.page@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/instant.page/-/instant.page-3.0.0.tgz#5f0fee0a9bf6c8b48b57bbec77f3ed1c3ad60231"
-  integrity sha512-cWTCMZlMZ/CKtY7+Rf3ZgeNtNPP9Yv/glRyriOMym98OhF484N5dRES9qv8q2MgMPmNwUb6T9mEHMdffICbnzw==
-
 invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"

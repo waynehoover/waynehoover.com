@@ -1,7 +1,7 @@
 ---
 title: The Four Core Values of a Successful Company
 metaDesc: The four core values I believe are the most important to a companies long term success.
-date: '2020-45-08'
+date: '2020-05-08'
 tags:
   - company
   - values

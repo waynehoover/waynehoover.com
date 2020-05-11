@@ -36,11 +36,8 @@
     "postcss-reporter": "6.0.1",
     "rss-parser": "^3.8.0",
     "slugify": "1.4.0",
-    "tailwindcss": "^1.4.6"
-  },
-  "devDependencies": {
+    "tailwindcss": "^1.4.6",
     "@babel/core": "^7.9.6",
-    "@fullhuman/postcss-purgecss": "^2.2.0",
     "cross-env": "7.0.2",
     "dotenv": "^8.2.0",
     "flat-cache": "^2.0.1",

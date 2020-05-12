@@ -5,9 +5,12 @@
     <link rel="alternate" type="application/rss+xml" title="{{ config.title }}" href="{{ config.url }}/feed.xml"/>
     {% include "meta.njk" %}
     <link rel="stylesheet" href="/assets/css/app.css">
+    <script src="/assets/js/app.js"></script>
     {% block head %}{% endblock %}
   </head>
-  <body data-router-wrapper>
-    {% block content %}{% endblock content %}
+  <body>
+    <div data-router-wrapper>
+      {% block content %}{% endblock content %}
+    </div>
   </body>
 </html>

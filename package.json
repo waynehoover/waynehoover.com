@@ -29,6 +29,7 @@
     "@barba/core": "^2.9.7",
     "@barba/prefetch": "^2.1.10",
     "@dogstudio/highway": "^2.2.1",
+    "@swup/preload-plugin": "^1.0.3",
     "@tailwindcss/ui": "^0.3.0",
     "@tbranyen/jsdom": "13.0.0",
     "cross-env": "7.0.2",
@@ -49,6 +50,7 @@
     "rimraf": "3.0.2",
     "rss-parser": "^3.8.0",
     "slugify": "1.4.0",
+    "swup": "^2.0.9",
     "tailwindcss": "^1.4.6"
   },
   "browserslist": [

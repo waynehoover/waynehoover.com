@@ -1,8 +1,7 @@
-import barba from '@barba/core';
-import prefetch from '@barba/prefetch';
+import Swup from 'swup';
+import SwupPreloadPlugin from '@swup/preload-plugin';
 
-// tell Barba to use the prefetch plugin
-barba.use(prefetch);
+const swup = new Swup({
+  plugins: [new SwupPreloadPlugin()]
+});
 
-// init Barba
-barba.init();

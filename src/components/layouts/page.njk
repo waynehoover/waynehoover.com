@@ -1,16 +1,12 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-  <main tabindex="-1" class="container mx-auto">
-    {% include "header.njk" %}
-    {% if title %}
-      <h1 class="text-center pt-10 pb-5 houtline" style="font-size: 6rem">{{ title }}</h1>
-    {% endif %}
-    <div class="pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
-      <div class="relative max-w-lg mx-auto lg:max-w-7xl">
-        {{ content | safe }}
-      </div>
+  {% if title %}
+    <h1 class="text-center pt-10 pb-5 houtline" style="font-size: 6rem">{{ title }}</h1>
+  {% endif %}
+  <div class="pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+    <div class="relative max-w-lg mx-auto lg:max-w-7xl">
+      {{ content | safe }}
     </div>
-    {% include "footer.njk" %}
-  </main>
+  </div>
 {% endblock %}

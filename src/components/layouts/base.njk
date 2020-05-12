@@ -8,7 +8,13 @@
     {% block head %}{% endblock %}
   </head>
   <body>
-    {% block content %}{% endblock content %}
-    <script src="/assets/js/flying-pages.min.js" type="module" defer></script>
+    <main class="container mx-auto px-4" tabindex="-1" data-barba="wrapper">
+      {% include "header.njk" %}
+      <div data-barba="container">
+        {% block content %}{% endblock content %}
+      </div>
+      {% include "footer.njk" %}
+    </main>
+  <script src="/assets/js/app.js"></script>
   </body>
 </html>

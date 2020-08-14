@@ -1,13 +1,13 @@
 {
-  "name": "xity-starter",
-  "version": "1.1.1",
-  "description": "A blog-ready 11ty starter based on PostCSS, width RSS feed and Native Elements.",
-  "author": "Mattia Astorino",
+  "name": "WayneHoover.com",
+  "version": "1.1.0",
+  "description": "WayneHoover.com Website and Blog",
+  "author": "Wayne Hoover",
   "main": "dist/assets/js/app.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/equinusocio/xity-starter"
+    "url": "https://github.com/waynehoover/waynehoover.com"
   },
   "scripts": {
     "clean": "run-s clean:*",

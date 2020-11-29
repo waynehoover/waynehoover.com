@@ -3,6 +3,7 @@
 
 # caches
 .cache
+_datacache*
 
 # output
 /dist

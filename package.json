@@ -9,6 +9,7 @@
     "type": "git",
     "url": "https://github.com/waynehoover/waynehoover.com"
   },
+  "engines" : { "node" : ">=15" },
   "scripts": {
     "clean": "run-s clean:*",
     "clean:cache": "rimraf ./.cache",

@@ -1,6 +1,6 @@
 // code mostly from https://www.11ty.dev/docs/quicktips/eliminate-js/
 
-const pinboardUrl = `https://api.pinboard.in/v1/posts/recent?auth_token=${process.env.PINBOARD_API}&format=json`;
+const pinboardUrl = 'https://feeds.pinboard.in/json/u:blissofbeing?count=20';
 
 const fetch = require("node-fetch");
 const flatcache = require("flat-cache");
@@ -22,7 +22,7 @@ module.exports = async function() {
       .then(res => res.json())
       .then(json => {
         return {
-          posts: json.posts
+          items: json
         };
       });
 

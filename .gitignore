@@ -4,6 +4,7 @@
 # caches
 .cache
 _datacache*
+.parcel-cache
 
 # output
 /dist

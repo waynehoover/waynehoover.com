@@ -1,8 +1,0 @@
-var _swup = require('swup');
-var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
-var _swupDefault = _parcelHelpers.interopDefault(_swup);
-var _swupPreloadPlugin = require('@swup/preload-plugin');
-var _swupPreloadPluginDefault = _parcelHelpers.interopDefault(_swupPreloadPlugin);
-const swup = new _swupDefault.default({
-  plugins: [new _swupPreloadPluginDefault.default()]
-});

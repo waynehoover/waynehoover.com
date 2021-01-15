@@ -3,7 +3,6 @@
   "version": "1.1.0",
   "description": "WayneHoover.com Website and Blog",
   "author": "Wayne Hoover",
-  "main": "dist/assets/js/app.js",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -18,48 +17,38 @@
     "clean:dist": "rimraf ./dist",
     "build": "cross-env ELEVENTY_ENV=production run-s clean:* build:assets build:html",
     "build:html": "eleventy",
-    "build:assets": "parcel build ./assets/css/app.pcss ./assets/js/app.js --out-dir ./dist/assets --no-source-maps",
+    "build:assets": "parcel build ./assets/css/app.pcss ./assets/js/app.js --dist-dir ./dist/assets --no-source-maps",
     "watch": "cross-env ELEVENTY_ENV=development run-s clean:* build:assets && run-p serve watch:*",
     "serve": "eleventy --serve --port=8080",
-    "watch:assets": "parcel watch ./assets/css/app.pcss ./assets/js/app.js --out-dir ./dist/assets --no-source-maps --no-hmr",
+    "watch:assets": "parcel watch ./assets/css/app.pcss ./assets/js/app.js --dist-dir ./dist/assets --no-source-maps --no-hmr",
     "dev": "yarn watch"
   },
   "dependencies": {
     "@11ty/eleventy": "0.11.1",
     "@11ty/eleventy-plugin-rss": "1.0.9",
     "@11ty/eleventy-plugin-syntaxhighlight": "3.0.4",
-    "@babel/core": "^7.12.9",
-    "@barba/core": "^2.9.7",
-    "@barba/prefetch": "^2.1.10",
-    "@dogstudio/highway": "^2.2.1",
     "@swup/preload-plugin": "^1.0.3",
     "@tbranyen/jsdom": "13.0.0",
-    "autoprefixer": "^9",
+    "autoprefixer": "^10.2.1",
     "cross-env": "7.0.2",
-    "cssnano": "4.1.10",
-    "cssnano-preset-advanced": "4.0.7",
     "dotenv": "^8.2.0",
     "flat-cache": "^3.0.4",
     "html-minifier": "4.0.0",
     "markdown-it": "12.0.2",
     "node-fetch": "^2.6.1",
     "npm-run-all": "4.1.5",
-    "parcel-bundler": "^1.12.4",
-    "postcss": "^7",
-    "postcss-nested": "^4.2.3",
-    "prettier": "2.2.1",
+    "parcel": "^2.0.0-beta.1",
+    "postcss": "^8.2.4",
+    "postcss-nested": "5.0.3",
     "rimraf": "3.0.2",
     "rss-parser": "^3.9.0",
     "slugify": "1.4.6",
     "swup": "^2.0.11",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "tailwindcss": "^2.0.2"
   },
   "browserslist": [
     "last 1 Chrome versions",
     "last 1 Firefox versions",
     "last 1 Safari versions"
-  ],
-  "devDependencies": {
-    "@babel/preset-env": "^7.12.7"
-  }
+  ]
 }

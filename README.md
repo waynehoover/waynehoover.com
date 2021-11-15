@@ -2,5 +2,4 @@
 
 11ty static site that powers https://waynehoover.com with parceljs and tailwindcss. Deployed to Netlify.
 
-- `yarn dev`
-- `yarn deploy`
+Simply git push and netlify build and deploys.

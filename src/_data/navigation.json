@@ -14,16 +14,6 @@
       "text": "Writing",
       "url": "/writing/",
       "external": false
-    },
-    {
-      "text": "Links",
-      "url": "/links/",
-      "external": false
-    },
-    {
-      "text": "Wiki",
-      "url": "https://kb.waynehoover.com",
-      "external": true
     }
   ]
 }
